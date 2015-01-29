@@ -1,4 +1,3 @@
-//private double fractionLength = .8; 
 private double fractionLength = .8; 
 private int smallestBranch = 12; 
 private int threshold_len = 42;
@@ -36,10 +35,10 @@ public void drawBranches(int x,int y, double branchLength, double angle) {
   line(x,y,endX2,endY2);
   if(branchLength>smallestBranch){
     drawBranches(endX1,endY1,branchLength,angle+angle_inc); 
-      //drawBranches(endX2,endY2,branchLength,angle-(Math.PI/7));
-      //drawBranches(endX2,endY2,branchLength,angle+(Math.PI/7)); 
-      drawBranches(endX2,endY2,branchLength,
-        angle+( (branchLength>threshold_len) ?  (0-angle_inc2):(angle_inc2)) 
-        ); 
+    //drawBranches(endX2,endY2,branchLength,angle-(Math.PI/7));
+    //drawBranches(endX2,endY2,branchLength,angle+(Math.PI/7)); 
+    drawBranches(endX2,endY2,branchLength,
+      angle+( (branchLength>threshold_len) ?  (0-angle_inc2):(angle_inc2) ) 
+      ); 
   }
 } 
