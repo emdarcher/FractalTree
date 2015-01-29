@@ -16,8 +16,8 @@ public class FractalTree extends PApplet {
 
 //private double fractionLength = .8; 
 private double fractionLength = .8f; 
-private int smallestBranch = 10; 
-private int threshold_len = 64;
+private int smallestBranch = 12; 
+private int threshold_len = 42;
 private double branchAngle = .6f;  
 private double branchAngle1 =.2f;  
 private double branchAngle2 = Math.PI/2;  
@@ -35,7 +35,7 @@ public void draw() {
 	background(0);   
 	stroke(0,255,0);   
 	line(TRUNK_ENDX,TRUNK_ENDY+TRUNK_LEN,TRUNK_ENDX,TRUNK_ENDY);   
-	drawBranches(TRUNK_ENDX,TRUNK_ENDY,TRUNK_LEN,(5.5f*Math.PI/4));  //will add later 
+	drawBranches(TRUNK_ENDX,TRUNK_ENDY,TRUNK_LEN,(5.5f*Math.PI/4));  
 } 
 public void drawBranches(int x,int y, double branchLength, double angle) {   
   //double angle_inc = (3*Math.PI/9);
