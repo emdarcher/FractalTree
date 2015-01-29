@@ -20,9 +20,9 @@ private int threshold_len = 42;
 private double branchAngle = .6f;  
 private double branchAngle1 =.2f;  
 private double branchAngle2 = Math.PI/2;  
-public int TRUNK_LEN = 148;
-public int TRUNK_ENDX;
-public int TRUNK_ENDY;
+private int TRUNK_LEN = 148;
+private int TRUNK_ENDX;
+private int TRUNK_ENDY;
 public void setup() {   
 	//size(640,480);    
 	size(1024,600);    
